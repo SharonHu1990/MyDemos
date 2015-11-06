@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/huxiaoyang/Desktop/MyWorkSpace/My\ Demo/ShareDemo/Pods/Target\ Support\ Files/Pods/Pods-dummy.m
+  /Users/huxiaoyang/Desktop/MyWorkSpace/MyDemos/ShareDemo/Pods/Target\ Support\ Files/Pods/Pods-dummy.m

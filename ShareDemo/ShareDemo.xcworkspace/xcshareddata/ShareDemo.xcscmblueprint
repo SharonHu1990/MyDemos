@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C993B3D24CEC40C4763F05BA0652A0DDBE496DFB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c36edfa0-75b2-4499-ae5c-bb305766112c++5005" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C993B3D24CEC40C4763F05BA0652A0DDBE496DFB" : 0,
+    "c36edfa0-75b2-4499-ae5c-bb305766112c++5005" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E9ED6A84-8594-46B4-BF4D-E1087C4D2F5D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C993B3D24CEC40C4763F05BA0652A0DDBE496DFB" : "MyDemos\/",
+    "c36edfa0-75b2-4499-ae5c-bb305766112c++5005" : "..\/Roboo'sApps\/RobooJoke(3.0.4)\/RobooJoke(3.0)"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ShareDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ShareDemo\/ShareDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SharonHu1990\/MyDemos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C993B3D24CEC40C4763F05BA0652A0DDBE496DFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/xiaoyang.hu@172.16.100.7",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c36edfa0-75b2-4499-ae5c-bb305766112c++5005"
+    }
+  ]
+}

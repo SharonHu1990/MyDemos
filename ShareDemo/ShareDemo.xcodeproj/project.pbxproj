@@ -13,6 +13,15 @@
 		0A62C7601BE9E3620073885B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C75E1BE9E3620073885B /* Main.storyboard */; };
 		0A62C7621BE9E3620073885B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C7611BE9E3620073885B /* Assets.xcassets */; };
 		0A62C7651BE9E3620073885B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A62C7631BE9E3620073885B /* LaunchScreen.storyboard */; };
+		0A6A5CB61BEC873C00257613 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CB51BEC873C00257613 /* Security.framework */; };
+		0A6A5CB81BEC874C00257613 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CB71BEC874C00257613 /* libiconv.tbd */; };
+		0A6A5CBA1BEC875900257613 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CB91BEC875900257613 /* SystemConfiguration.framework */; };
+		0A6A5CBC1BEC876600257613 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CBB1BEC876600257613 /* CoreGraphics.framework */; };
+		0A6A5CBE1BEC877200257613 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CBD1BEC877200257613 /* libsqlite3.tbd */; };
+		0A6A5CC01BEC877F00257613 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CBF1BEC877F00257613 /* CoreTelephony.framework */; };
+		0A6A5CC21BEC878D00257613 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CC11BEC878D00257613 /* libstdc++.tbd */; };
+		0A6A5CC41BEC91EB00257613 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6A5CC31BEC91EB00257613 /* libz.tbd */; };
+		0A6A5CCD1BECA01500257613 /* TencentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6A5CCC1BECA01500257613 /* TencentService.m */; settings = {ASSET_TAGS = (); }; };
 		CE9FD042F29AC8CAB19D334C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61611BBC7F54F319B625ED5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +37,17 @@
 		0A62C7641BE9E3620073885B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A62C7661BE9E3620073885B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A62C76F1BE9E5790073885B /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		0A6A5CB51BEC873C00257613 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0A6A5CB71BEC874C00257613 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0A6A5CB91BEC875900257613 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0A6A5CBB1BEC876600257613 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A6A5CBD1BEC877200257613 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0A6A5CBF1BEC877F00257613 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0A6A5CC11BEC878D00257613 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		0A6A5CC31BEC91EB00257613 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0A6A5CCB1BECA01500257613 /* TencentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentService.h; sourceTree = "<group>"; };
+		0A6A5CCC1BECA01500257613 /* TencentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TencentService.m; sourceTree = "<group>"; };
+		0A6A5CD01BECA2F800257613 /* QQSdkDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQSdkDefines.h; sourceTree = "<group>"; };
 		24D82CD08584A3DF5FA92CC3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7E60B61E5C374D432E8A5F3E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A61611BBC7F54F319B625ED5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +58,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A6A5CC41BEC91EB00257613 /* libz.tbd in Frameworks */,
+				0A6A5CC21BEC878D00257613 /* libstdc++.tbd in Frameworks */,
+				0A6A5CC01BEC877F00257613 /* CoreTelephony.framework in Frameworks */,
+				0A6A5CBE1BEC877200257613 /* libsqlite3.tbd in Frameworks */,
+				0A6A5CBC1BEC876600257613 /* CoreGraphics.framework in Frameworks */,
+				0A6A5CBA1BEC875900257613 /* SystemConfiguration.framework in Frameworks */,
+				0A6A5CB81BEC874C00257613 /* libiconv.tbd in Frameworks */,
+				0A6A5CB61BEC873C00257613 /* Security.framework in Frameworks */,
 				CE9FD042F29AC8CAB19D334C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +94,8 @@
 		0A62C7541BE9E3620073885B /* ShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0A6A5CCE1BECA2D400257613 /* SDKDefines */,
+				0A6A5CAF1BEC83F700257613 /* TencentService */,
 				0A62C76F1BE9E5790073885B /* Defines.h */,
 				0A62C7581BE9E3620073885B /* AppDelegate.h */,
 				0A62C7591BE9E3620073885B /* AppDelegate.m */,
@@ -88,6 +118,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0A6A5CAF1BEC83F700257613 /* TencentService */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A5CCB1BECA01500257613 /* TencentService.h */,
+				0A6A5CCC1BECA01500257613 /* TencentService.m */,
+			);
+			name = TencentService;
+			sourceTree = "<group>";
+		};
+		0A6A5CCE1BECA2D400257613 /* SDKDefines */ = {
+			isa = PBXGroup;
+			children = (
+				0A6A5CD01BECA2F800257613 /* QQSdkDefines.h */,
+			);
+			name = SDKDefines;
+			sourceTree = "<group>";
+		};
 		17A6C62B39B7F9AECF72114A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +147,14 @@
 		A9DD77A2751010A9DE016B2A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A6A5CC31BEC91EB00257613 /* libz.tbd */,
+				0A6A5CC11BEC878D00257613 /* libstdc++.tbd */,
+				0A6A5CBF1BEC877F00257613 /* CoreTelephony.framework */,
+				0A6A5CBD1BEC877200257613 /* libsqlite3.tbd */,
+				0A6A5CBB1BEC876600257613 /* CoreGraphics.framework */,
+				0A6A5CB91BEC875900257613 /* SystemConfiguration.framework */,
+				0A6A5CB71BEC874C00257613 /* libiconv.tbd */,
+				0A6A5CB51BEC873C00257613 /* Security.framework */,
 				A61611BBC7F54F319B625ED5 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -227,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A62C75D1BE9E3620073885B /* ViewController.m in Sources */,
+				0A6A5CCD1BECA01500257613 /* TencentService.m in Sources */,
 				0A62C75A1BE9E3620073885B /* AppDelegate.m in Sources */,
 				0A62C7571BE9E3620073885B /* main.m in Sources */,
 			);

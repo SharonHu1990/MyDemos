@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tAw-yS-rpo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="eXx-Of-XUS">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="tAw-yS-rpo" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="ij3-Bi-zc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="zvA-7u-QWK"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="iwN-Nd-3LD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhS-Fc-fwW">
+                                <rect key="frame" x="58" y="69" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="第三方登录"/>
+                                <connections>
+                                    <action selector="loginQQ:" destination="tAw-yS-rpo" eventType="touchUpInside" id="Uzl-kV-yN3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHB-ch-bDi">
+                                <rect key="frame" x="58" y="107" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="QQ文本"/>
+                                <connections>
+                                    <action selector="sendQQText:" destination="tAw-yS-rpo" eventType="touchUpInside" id="LXU-ki-Shn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fb8-ri-wsa">
+                                <rect key="frame" x="58" y="145" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="QQ图片"/>
+                                <connections>
+                                    <action selector="sendQQImage:" destination="tAw-yS-rpo" eventType="touchUpInside" id="k4U-Uu-5yG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ovb-GB-RJE">
+                                <rect key="frame" x="58" y="183" width="76" height="30"/>
+                                <animations/>
+                                <state key="normal" title="QQ视频"/>
+                                <connections>
+                                    <action selector="sendQQVideo:" destination="tAw-yS-rpo" eventType="touchUpInside" id="bG2-fn-Vre"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFV-u9-Bf0">
+                                <rect key="frame" x="54" y="221" width="85" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Qzone文本"/>
+                                <connections>
+                                    <action selector="sendQzoneText:" destination="tAw-yS-rpo" eventType="touchUpInside" id="PfC-QD-neU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxf-XL-DsD">
+                                <rect key="frame" x="57" y="259" width="79" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Qzone图片"/>
+                                <connections>
+                                    <action selector="sendQzoneImage:" destination="tAw-yS-rpo" eventType="touchUpInside" id="QeR-Q3-tZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-Mx-Rrt">
+                                <rect key="frame" x="51" y="297" width="91" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Qzone视频"/>
+                                <connections>
+                                    <action selector="sendQzoneVideo:" destination="tAw-yS-rpo" eventType="touchUpInside" id="Ihc-1B-j4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peq-c3-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="730" y="-1"/>
         </scene>
     </scenes>
 </document>
