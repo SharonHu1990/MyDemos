@@ -73,6 +73,22 @@
                                     <action selector="sendQzoneVideo:" destination="tAw-yS-rpo" eventType="touchUpInside" id="Ihc-1B-j4p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElV-5M-YJ8">
+                                <rect key="frame" x="161" y="221" width="83" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Qzone音频"/>
+                                <connections>
+                                    <action selector="sendQzoneAudio:" destination="tAw-yS-rpo" eventType="touchUpInside" id="i8K-Ra-7hd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eE-2h-Te7">
+                                <rect key="frame" x="171" y="107" width="63" height="30"/>
+                                <animations/>
+                                <state key="normal" title="QQ音频"/>
+                                <connections>
+                                    <action selector="sendQQAudio:" destination="tAw-yS-rpo" eventType="touchUpInside" id="cdD-bi-A7v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peq-c3-WhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="-1"/>
+            <point key="canvasLocation" x="338" y="11"/>
         </scene>
     </scenes>
 </document>

@@ -11,9 +11,14 @@
 
 #define __TencentDemoAppid_  @"222222"
 
+//response
+#define kResponse @"kResponse"
+
 //login
 #define kLoginSuccessed @"loginSuccessed"
 #define kLoginFailed    @"loginFailed"
 #define kLoginCancelled @"loginCancelled"
+
+#define kGetUserInfoResponse @"getUserInfoResponse"
 
 #endif /* QQSdkDefines_h */

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0718E81BF1EE22006E4BB2 /* SharedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A0718E71BF1EE22006E4BB2 /* SharedImage.png */; settings = {ASSET_TAGS = (); }; };
+		0A0718EA1BF1EFAA006E4BB2 /* SharedVideo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 0A0718E91BF1EFAA006E4BB2 /* SharedVideo.m4v */; settings = {ASSET_TAGS = (); }; };
+		0A16E9961BF47AFB00394C7D /* WeiXinService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A16E9951BF47AFB00394C7D /* WeiXinService.m */; settings = {ASSET_TAGS = (); }; };
+		0A1BF9731BF2D30A00D1F3DA /* audio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A1BF9711BF2D30A00D1F3DA /* audio.jpg */; settings = {ASSET_TAGS = (); }; };
+		0A1BF9741BF2D30A00D1F3DA /* news.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A1BF9721BF2D30A00D1F3DA /* news.jpg */; settings = {ASSET_TAGS = (); }; };
 		0A62C7571BE9E3620073885B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C7561BE9E3620073885B /* main.m */; };
 		0A62C75A1BE9E3620073885B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C7591BE9E3620073885B /* AppDelegate.m */; };
 		0A62C75D1BE9E3620073885B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A62C75C1BE9E3620073885B /* ViewController.m */; };
@@ -26,6 +31,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A0718E71BF1EE22006E4BB2 /* SharedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SharedImage.png; sourceTree = "<group>"; };
+		0A0718E91BF1EFAA006E4BB2 /* SharedVideo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = SharedVideo.m4v; sourceTree = "<group>"; };
+		0A16E9941BF47AFB00394C7D /* WeiXinService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiXinService.h; sourceTree = "<group>"; };
+		0A16E9951BF47AFB00394C7D /* WeiXinService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeiXinService.m; sourceTree = "<group>"; };
+		0A1BF9711BF2D30A00D1F3DA /* audio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = audio.jpg; sourceTree = "<group>"; };
+		0A1BF9721BF2D30A00D1F3DA /* news.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news.jpg; sourceTree = "<group>"; };
 		0A62C7521BE9E3620073885B /* ShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A62C7561BE9E3620073885B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A62C7581BE9E3620073885B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,8 +105,14 @@
 		0A62C7541BE9E3620073885B /* ShareDemo */ = {
 			isa = PBXGroup;
 			children = (
-				0A6A5CCE1BECA2D400257613 /* SDKDefines */,
+				0A84948F1BF47F6B004ADC6D /* SinaService */,
 				0A6A5CAF1BEC83F700257613 /* TencentService */,
+				0A84948B1BF47BEE004ADC6D /* WeiXinService */,
+				0A1BF9711BF2D30A00D1F3DA /* audio.jpg */,
+				0A1BF9721BF2D30A00D1F3DA /* news.jpg */,
+				0A0718E91BF1EFAA006E4BB2 /* SharedVideo.m4v */,
+				0A0718E71BF1EE22006E4BB2 /* SharedImage.png */,
+				0A6A5CCE1BECA2D400257613 /* SDKDefines */,
 				0A62C76F1BE9E5790073885B /* Defines.h */,
 				0A62C7581BE9E3620073885B /* AppDelegate.h */,
 				0A62C7591BE9E3620073885B /* AppDelegate.m */,
@@ -133,6 +150,22 @@
 				0A6A5CD01BECA2F800257613 /* QQSdkDefines.h */,
 			);
 			name = SDKDefines;
+			sourceTree = "<group>";
+		};
+		0A84948B1BF47BEE004ADC6D /* WeiXinService */ = {
+			isa = PBXGroup;
+			children = (
+				0A16E9951BF47AFB00394C7D /* WeiXinService.m */,
+				0A16E9941BF47AFB00394C7D /* WeiXinService.h */,
+			);
+			name = WeiXinService;
+			sourceTree = "<group>";
+		};
+		0A84948F1BF47F6B004ADC6D /* SinaService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SinaService;
 			sourceTree = "<group>";
 		};
 		17A6C62B39B7F9AECF72114A /* Pods */ = {
@@ -223,6 +256,10 @@
 				0A62C7651BE9E3620073885B /* LaunchScreen.storyboard in Resources */,
 				0A62C7621BE9E3620073885B /* Assets.xcassets in Resources */,
 				0A62C7601BE9E3620073885B /* Main.storyboard in Resources */,
+				0A0718EA1BF1EFAA006E4BB2 /* SharedVideo.m4v in Resources */,
+				0A1BF9741BF2D30A00D1F3DA /* news.jpg in Resources */,
+				0A1BF9731BF2D30A00D1F3DA /* audio.jpg in Resources */,
+				0A0718E81BF1EE22006E4BB2 /* SharedImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +320,7 @@
 			files = (
 				0A62C75D1BE9E3620073885B /* ViewController.m in Sources */,
 				0A6A5CCD1BECA01500257613 /* TencentService.m in Sources */,
+				0A16E9961BF47AFB00394C7D /* WeiXinService.m in Sources */,
 				0A62C75A1BE9E3620073885B /* AppDelegate.m in Sources */,
 				0A62C7571BE9E3620073885B /* main.m in Sources */,
 			);

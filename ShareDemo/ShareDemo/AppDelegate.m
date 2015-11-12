@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <TencentOpenAPI/TencentOAuth.h>
+
+#import "TencentService.h"
 
 @interface AppDelegate ()
 
@@ -43,12 +44,52 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [TencentOAuth HandleOpenURL:url];
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+//    NSString *strURL=[NSString stringWithFormat:@"%@",url];
+    
+//    if ([strURL hasPrefix:@"wb845608081"]) {
+//        return [WeiboSDK handleOpenURL:url delegate:[SinaService share]];
+//    }
+//    else if ([strURL hasPrefix:@"wx35082a67fbd1c5c3"]) {
+//        return [WXApi handleOpenURL:url delegate:[WeiXinService shareInstance]];
+//    }else{
+    
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        
+        if (YES == [TencentOAuth CanHandleOpenURL:url])
+                {
+            return [TencentOAuth HandleOpenURL:url];
+                }
+        return YES;
+//    }
+
 }
 
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
-    return [TencentOAuth HandleOpenURL:url];
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+//    NSString *strURL=[NSString stringWithFormat:@"%@",url];
+//    
+//    if ([strURL hasPrefix:@"wb845608081"]) {
+//        return [WeiboSDK handleOpenURL:url delegate:[SinaService share]];
+//    }
+//    else if ([strURL hasPrefix:@"wx35082a67fbd1c5c3"]) {
+//        return [WXApi handleOpenURL:url delegate:[WeiXinService shareInstance]];
+//    }else{
+    
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        
+        if (YES == [TencentOAuth CanHandleOpenURL:url])
+                {
+            return [TencentOAuth HandleOpenURL:url];
+                }
+        return YES;
+//    }
+
 }
 
 @end
