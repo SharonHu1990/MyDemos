@@ -19,6 +19,10 @@
 #define kLoginFailed    @"loginFailed"
 #define kLoginCancelled @"loginCancelled"
 
+
+//Share
+#define kQQShareFinished @"qqShareFinished"
+
 #define kGetUserInfoResponse @"getUserInfoResponse"
 
 #endif /* QQSdkDefines_h */

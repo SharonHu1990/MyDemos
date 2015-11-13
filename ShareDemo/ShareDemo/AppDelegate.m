@@ -55,9 +55,9 @@
 //        return [WXApi handleOpenURL:url delegate:[WeiXinService shareInstance]];
 //    }else{
     
-        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareTencentService]];
         
-        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareTencentService]];
         
         if (YES == [TencentOAuth CanHandleOpenURL:url])
                 {
@@ -79,9 +79,9 @@
 //        return [WXApi handleOpenURL:url delegate:[WeiXinService shareInstance]];
 //    }else{
     
-        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareTencentService]];
         
-        [QQApiInterface handleOpenURL:url delegate:[TencentService shareInstance]];
+        [QQApiInterface handleOpenURL:url delegate:[TencentService shareTencentService]];
         
         if (YES == [TencentOAuth CanHandleOpenURL:url])
                 {

@@ -11,6 +11,7 @@
 #import <TencentOpenAPI/TencentOAuthObject.h>
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <TencentOpenAPI/QQApiInterfaceObject.h>
+#import "Singleton.h"
 
 typedef enum : NSUInteger {
     KShareToQQ,
@@ -20,14 +21,13 @@ typedef enum : NSUInteger {
 @interface TencentService : NSObject
 <
 TencentSessionDelegate,
-QQApiInterfaceDelegate
+QQApiInterfaceDelegate,
+NSCopying
 >
 
+interfaceSingleton(TencentService);
 
 @property (nonatomic, retain) TencentOAuth *tencentOAuth;
-@property (nonatomic, assign) ShareDestination shareDestination;//分享到QQ或Qzone
-
-+(TencentService *)shareInstance;
 
 + (BOOL) iphoneQQInstalled;
 
@@ -39,27 +39,34 @@ QQApiInterfaceDelegate
  */
 -(void)authorize:(void(^)(APIResponse* reponse,NSString *openId))success fail:(void(^)(void))fail;
 
+-(void)loginQQ;
 
--(void)sendTextToQQ:(NSString *)text;
+
+-(void)sendTextToQQ:(NSString *)text
+        destination:(ShareDestination)destination;
 
 -(void)sendImageToQQ:(NSData *)imageData
                title:(NSString *)title
-         description:(NSString *)description;
+         description:(NSString *)description
+         destination:(ShareDestination)destination;
 
 -(void)sendVideoToQQWithVideoTitle:(NSString *)title
                        description:(NSString *)description
                    previewImageURL:(NSURL *)previewImageUrl
                           videoURL:(NSURL *)videoUrl
-                      redicrectURL:(NSURL *)redirectUrl;
+                      redicrectURL:(NSURL *)redirectUrl
+                       destination:(ShareDestination)destination;
 
 -(void)sendNewsWithURL:(NSURL *)url
                  title:(NSString *)title
            description:(NSString *)description
-       previewImageURL:(NSURL *)previewImageURL;
+       previewImageURL:(NSURL *)previewImageURL
+           destination:(ShareDestination)destination;
 
 -(void)sendAudioWithURL:(NSString *)url
         previewImageUrl:(NSString *)previewImageUrl
                flashUrl:(NSString *)flashURL
                   title:(NSString *)title
-            description:(NSString *)description;
+            description:(NSString *)description
+            destination:(ShareDestination)destination;
 @end
