@@ -29,6 +29,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginQQFailed) name:kLoginFailed object:[TencentService shareTencentService]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginQQCancelled) name:kLoginCancelled object:[TencentService shareTencentService]];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginQQCancelled) name:kLoginNoNetwork object:[TencentService shareTencentService]];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(analysisResponse:) name:kGetUserInfoResponse object:[TencentService shareTencentService]];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(qqShareFinished:) name:kQQShareFinished object:nil];
@@ -65,6 +67,12 @@
 
 - (void)loginQQCancelled{
     //do nothing
+    
+}
+
+- (void)loginQQNoNetwork{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"结果" message:@"无网络" delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil];
+    [alertView show];
 }
 
 

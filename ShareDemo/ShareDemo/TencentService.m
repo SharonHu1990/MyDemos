@@ -255,7 +255,7 @@ implementationSingle(TencentService)
  * 登录成功后的回调
  */
 - (void)tencentDidLogin{
-
+    [[NSNotificationCenter defaultCenter] postNotificationName:kLoginSuccessed object:self];
 }
 
 /**
@@ -264,7 +264,12 @@ implementationSingle(TencentService)
  */
 - (void)tencentDidNotLogin:(BOOL)cancelled{
     NSLog(@"登录失败");
-    [[NSNotificationCenter defaultCenter] postNotificationName:kLoginCancelled object:self];
+    if (cancelled) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLoginCancelled object:self];
+    }else{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kLoginFailed object:self];
+    }
+    
 }
 
 /**
@@ -272,7 +277,7 @@ implementationSingle(TencentService)
  */
 - (void)tencentDidNotNetWork{
     NSLog(@"无网络连接，请设置网络");
-     [[NSNotificationCenter defaultCenter] postNotificationName:kLoginFailed object:self];
+     [[NSNotificationCenter defaultCenter] postNotificationName:kLoginNoNetwork object:self];
 }
 
 
@@ -287,6 +292,8 @@ implementationSingle(TencentService)
     NSLog(@"获取用户信息");
     [[NSNotificationCenter defaultCenter] postNotificationName:kGetUserInfoResponse object:self  userInfo:[NSDictionary dictionaryWithObjectsAndKeys:response, kResponse, nil]];
 }
+
+
 
 
 #pragma mark -  QQApiInterfaceDelegate

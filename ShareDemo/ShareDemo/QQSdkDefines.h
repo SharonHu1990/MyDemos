@@ -18,6 +18,7 @@
 #define kLoginSuccessed @"loginSuccessed"
 #define kLoginFailed    @"loginFailed"
 #define kLoginCancelled @"loginCancelled"
+#define kLoginNoNetwork @"loginNoNetwork"
 
 
 //Share
