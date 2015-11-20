@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+            <title></title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
+                <link href="./detail.css" rel="stylesheet">
+                    
+                    <style>
+                        .tagBtn {
+                            width: 60px;
+                            height: 25px;
+                            border-radius: 8px;
+                            background:none;
+                            color:#858585;
+                            border: 1px solid #ddd;
+                        }
+                    
+                    
+                    
+                    p.line {border-bottom-style:solid; border-width:thin; border-color:#F1F1F1;}
+                    
+                        </style>
+                    </head>  
+    
+    <body>  
+        <div id='container' name="container"> 
+            
+            <div class="title">
+                
+                <h3><font color="#363636">{{ title }}</font></h3>
+                
+                <div class ="siteTime">
+                    <font size="2" color="#989898">{{ site }}  {{ time }}</font>
+                </div>
+                <br>
+                <div class="tagBtns">
+                    
+                    {{{ tagBtns }}}
+                    
+                </div>
+                <p class="line"></p>
+            </div> 
+            <div class="summary">{{{ summary }}}</div>
+        </div>  
+    </body>  
+    
+</html>

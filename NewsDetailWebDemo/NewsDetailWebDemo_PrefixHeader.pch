@@ -1,0 +1,18 @@
+//
+//  NewsDetailWebDemo_PrefixHeader.pch
+//  NewsDetailWebDemo
+//
+//  Created by 胡晓阳 on 15/11/19.
+//  Copyright © 2015年 HXY. All rights reserved.
+//
+
+#ifndef NewsDetailWebDemo_PrefixHeader_pch
+#define NewsDetailWebDemo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#endif /* NewsDetailWebDemo_PrefixHeader_pch */

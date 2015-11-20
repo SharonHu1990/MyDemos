@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
+        <link href="./detail.css" rel="stylesheet">
+                    
+        <style>
+               .tagBtn {
+                   width: 60px;
+                   height: 25px;
+                   border-radius: 8px;
+                   background:none;
+                   color:#858585;
+                   border: 1px solid #ddd;
+                }
+        
+                    
+                    
+                p.line {border-bottom-style:solid; border-width:thin; border-color:#F1F1F1;}
+                
+        </style>
+        
+        <script>
+            
+                window.onerror = function(err) {
+                    log('window.onerror: ' + err)
+                }
+
+                function connectWebViewJavascriptBridge(callback) {
+                    if (window.WebViewJavascriptBridge) {
+                            callback(WebViewJavascriptBridge)
+                    } else {
+                        document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                            callback(WebViewJavascriptBridge)
+                    }, false)
+                }
+                }
+
+                connectWebViewJavascriptBridge(function(bridge) {
+                var uniqueId = 1
+
+
+
+                function log(message, data) {
+                var log = document.getElementById('log')
+                var el = document.createElement('div')
+                el.className = 'logLine'
+                el.innerHTML = uniqueId++ + '. ' + message + ':<br/>' + JSON.stringify(data)
+                if (log.children.length) { log.insertBefore(el, log.children[0]) }
+                else { log.appendChild(el) }
+                }
+
+
+
+                /* Init your app here */
+                // 从OC  bridge.send 方法过来的 就会调用到这个方法
+                bridge.init(function(message, responseCallback) {
+                            
+                            
+                            //判断从Objc传来的消息类型
+                            var msgDic = message;
+                            var msgType = msgDic["messageType"]
+                            
+                            
+                            
+                            /*******  添加标签按钮 ********/
+                            if(msgType=="addTagBtn"){
+                            
+                                var tagName = msgDic["object"]//获取标签名
+                                var input = document.getElementById('tagBtn').appendChild(document.createElement("input"))
+                                input.className="tagBtn"
+                                input.type="submit"
+                                input.value=tagName
+                                input.style.marginRight = "10px"
+                                input.onclick = function(e) {
+                                e.preventDefault()
+                                var data = message
+<!--                                log('JS sending message', data)-->
+                                bridge.send(data, function(responseData) {
+<!--                                            log('JS got response', responseData)-->
+                                            })
+                                }
+                            
+                            
+                            
+
+                            }
+                            
+                            
+                            
+                            
+                            /*******  替换图片 ********/
+                            if (message.match("replaceImage")) {
+                                //先截取图片id
+                                var imageID = msgDic["replaceImageID"]
+                            
+                                //截取到本地图片的路径
+                                var localImagePath = msgDic["localImagePath"]
+                        
+                            
+                                var replacePath
+                                
+                                messagereplace=messagereplace.replace(/replaceimage/,"")
+                                element=document.getElementById(imageID)
+                                
+                                if (element.src.match("loading"))
+                                {
+                                
+                                    element.src = messagepath
+                                }
+                            }
+
+                        
+                            
+                            
+                            
+                            
+<!--                           log('JS got a message', message)-->
+<!--                           var data = { 'Javascript Responds':'Wee!' }-->
+<!--                           log('JS responding with', data)-->
+<!--                           responseCallback(data)-->
+                           })
+
+
+
+
+
+
+                bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
+                                       
+                                      log('ObjC called testJavascriptHandler with', data)
+                                      var responseData = { 'Javascript Says':'Right back atcha!' }
+                                      log('JS responding with', responseData)
+                                      responseCallback(responseData)
+                                      })
+
+                                               
+                })
+
+
+        
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <div id='container' name="container">
+            
+            <div class="title">
+                
+                <h3><font color="#363636">{{ title }}</font></h3>
+                
+                <div class ="siteTime">
+                    <font size="2" color="#989898">{{ site }}  {{ time }}</font>
+                </div>
+                <br>
+
+                <div class="tagBtns">
+                    
+                    {{{ tagBtns }}}
+                    
+                </div>
+                
+                <div id='log'></div>
+
+                <p class="line"></p>
+            </div> 
+            <div class="summary">{{{ summary }}}</div>
+        </div>  
+    </body>  
+    
+</html>
