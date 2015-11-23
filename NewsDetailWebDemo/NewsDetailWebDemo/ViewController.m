@@ -42,7 +42,6 @@
             NSLog(@"点击了网页标签：%@",tagName);
         }
         
-        
         responseCallback(@"Response for message from ObjC");
     }];
     
