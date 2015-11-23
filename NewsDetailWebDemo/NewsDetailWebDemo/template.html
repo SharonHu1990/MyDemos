@@ -23,18 +23,26 @@
         
         <script>
             
+            
+
+
+            
                 window.onerror = function(err) {
                     log('window.onerror: ' + err)
                 }
+        
+        
+        
+        
 
                 function connectWebViewJavascriptBridge(callback) {
                     if (window.WebViewJavascriptBridge) {
                             callback(WebViewJavascriptBridge)
-                    } else {
-                        document.addEventListener('WebViewJavascriptBridgeReady', function() {
-                            callback(WebViewJavascriptBridge)
-                    }, false)
-                }
+                    }else {
+                            document.addEventListener('WebViewJavascriptBridgeReady', function() {
+                                callback(WebViewJavascriptBridge)
+                        }, false)
+                    }
                 }
 
                 connectWebViewJavascriptBridge(function(bridge) {
@@ -50,12 +58,16 @@
                 if (log.children.length) { log.insertBefore(el, log.children[0]) }
                 else { log.appendChild(el) }
                 }
+                          
+                                               
 
+             
 
 
                 /* Init your app here */
                 // 从OC  bridge.send 方法过来的 就会调用到这个方法
                 bridge.init(function(message, responseCallback) {
+
                             
                             
                             //判断从Objc传来的消息类型
@@ -74,59 +86,55 @@
                                 input.value=tagName
                                 input.style.marginRight = "10px"
                                 input.onclick = function(e) {
-                                e.preventDefault()
-                                var data = message
-<!--                                log('JS sending message', data)-->
-                                bridge.send(data, function(responseData) {
-<!--                                            log('JS got response', responseData)-->
-                                            })
+                                    e.preventDefault()
+                                    var data = message
+                                    log('JS sending message', data)
+                                    bridge.send(data, function(responseData) {
+                                            log('JS got response', responseData)
+                                    })
                                 }
                             
-                            
-                            
-
                             }
                             
                             
+        
                             
+                            
+                            /*******  缩放图片 ********/
+                            if(msgType=="resizeImages"){
+
+                            
+                                var myimg,oldwidth
+                                var maxwidth=msgDic["maxWidth"] //缩放系数
+                                for(var i=0;i <document.images.length;i++){
+                                    myimg = document.images[i]
+                                    if(myimg.width > maxwidth){
+                                         oldwidth = myimg.width
+                                         myimg.width = maxwidth
+                                         myimg.height = myimg.height * (maxwidth/oldwidth)
+                                    }}}
+
                             
                             /*******  替换图片 ********/
-                            if (message.match("replaceImage")) {
-                                //先截取图片id
-                                var imageID = msgDic["replaceImageID"]
-                            
-                                //截取到本地图片的路径
-                                var localImagePath = msgDic["localImagePath"]
-                        
-                            
-                                var replacePath
+                            if(msgType=="replaceImages"){
+                                var imageId = msgDic["imageId"]
+                                var newPath = msgDic["newPath"]
                                 
-                                messagereplace=messagereplace.replace(/replaceimage/,"")
-                                element=document.getElementById(imageID)
+                                var image = document.getElementById(imageId)
                                 
-                                if (element.src.match("loading"))
+                                if (image.src.match("loading"))
                                 {
                                 
-                                    element.src = messagepath
+                                    image.src = messagepath
                                 }
+
                             }
-
-                        
                             
                             
-                            
-                            
-<!--                           log('JS got a message', message)-->
-<!--                           var data = { 'Javascript Responds':'Wee!' }-->
-<!--                           log('JS responding with', data)-->
-<!--                           responseCallback(data)-->
-                           })
+                                                       
 
 
-
-
-
-
+                // 从oc通过Handler发送过来的就会调用这个函数
                 bridge.registerHandler('testJavascriptHandler', function(data, responseCallback) {
                                        
                                       log('ObjC called testJavascriptHandler with', data)
@@ -134,12 +142,19 @@
                                       log('JS responding with', responseData)
                                       responseCallback(responseData)
                                       })
+                                               
+                                               
+                                               
+
 
                                                
-                })
-
-
+        })
         
+                
+                
+        
+
+
         </script>
         
     </head>
