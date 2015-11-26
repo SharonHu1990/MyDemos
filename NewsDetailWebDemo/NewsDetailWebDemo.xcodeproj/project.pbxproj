@@ -23,6 +23,7 @@
 		0A15A9A41BFDBB77009DDF6B /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15A99F1BFDBB77009DDF6B /* WebViewJavascriptBridgeBase.m */; settings = {ASSET_TAGS = (); }; };
 		0A15A9A51BFDBB77009DDF6B /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A15A9A11BFDBB77009DDF6B /* WKWebViewJavascriptBridge.m */; settings = {ASSET_TAGS = (); }; };
 		0A29F62D1C02F0480065E2D0 /* preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A29F62C1C02F0480065E2D0 /* preview.png */; settings = {ASSET_TAGS = (); }; };
+		0A38C92D1C0455EB000B4599 /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A38C92C1C0455EB000B4599 /* nav_back.png */; settings = {ASSET_TAGS = (); }; };
 		2ADBD5BBB5743E51B58892F4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CF42A3AD94EF3BE65A6EC9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		0A15A9A01BFDBB77009DDF6B /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		0A15A9A11BFDBB77009DDF6B /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
 		0A29F62C1C02F0480065E2D0 /* preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preview.png; sourceTree = "<group>"; };
+		0A38C92C1C0455EB000B4599 /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
 		49CDD93A3E29F4081F74D660 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		64CE205D4FBF9B8162118C40 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		72CF42A3AD94EF3BE65A6EC9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 		0A15A8891BFD6487009DDF6B /* NewsDetailWebDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0A38C92C1C0455EB000B4599 /* nav_back.png */,
 				0A15A8F71BFD6B36009DDF6B /* WebTools */,
 				0A15A88D1BFD6487009DDF6B /* AppDelegate.h */,
 				0A15A88E1BFD6487009DDF6B /* AppDelegate.m */,
@@ -226,6 +229,7 @@
 				0A15A9A21BFDBB77009DDF6B /* WebViewJavascriptBridge.js.txt in Resources */,
 				0A15A89A1BFD6487009DDF6B /* LaunchScreen.storyboard in Resources */,
 				0A15A9901BFD6FB0009DDF6B /* template.html in Resources */,
+				0A38C92D1C0455EB000B4599 /* nav_back.png in Resources */,
 				0A15A8971BFD6487009DDF6B /* Assets.xcassets in Resources */,
 				0A15A8951BFD6487009DDF6B /* Main.storyboard in Resources */,
 				0A29F62D1C02F0480065E2D0 /* preview.png in Resources */,
@@ -407,7 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NewsDetailWebDemo_PrefixHeader.pch";
 				INFOPLIST_FILE = NewsDetailWebDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HXY.NewsDetailWebDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,7 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/NewsDetailWebDemo_PrefixHeader.pch";
 				INFOPLIST_FILE = NewsDetailWebDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HXY.NewsDetailWebDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

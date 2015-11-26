@@ -17,6 +17,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //设置NavigationBar背景颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    NSDictionary  * attributes =  @{
+                                    NSForegroundColorAttributeName  :  [UIColor whiteColor],
+                                    NSFontAttributeName :  [UIFont systemFontOfSize:17.f]
+                                    };
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+    
     return YES;
 }
 

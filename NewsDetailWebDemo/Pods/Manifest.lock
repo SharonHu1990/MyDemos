@@ -20,9 +20,15 @@ PODS:
   - AFNetworking/UIKit (2.5.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DACircularProgress (2.3.1)
   - GRMustache (7.3.2):
     - JRSwizzle (~> 1.0)
+  - IDMPhotoBrowser (1.7):
+    - AFNetworking
+    - DACircularProgress
+    - pop
   - JRSwizzle (1.0)
+  - pop (1.0.8)
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
@@ -30,12 +36,16 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - GRMustache (~> 7.3.2)
+  - IDMPhotoBrowser
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: e1d86c2a96bb5d2e7408da36149806706ee122fe
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   GRMustache: ebe6104fd30a6d22c1f36af131e19e2dbf7cd292
+  IDMPhotoBrowser: 1155caa03f8705b7943c074c26b55aadd43d71da
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.39.0

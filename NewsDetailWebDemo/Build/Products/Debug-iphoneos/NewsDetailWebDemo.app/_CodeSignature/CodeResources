@@ -8,7 +8,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			htadYDaaA9Ba9mNs/po3M8T2B4c=
+			2tNH+mrsJAVPvUdOQWY8QlJeUww=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yJkTURJoV3SOLCWn+d4RAZax2S4=
+			SbtkMWgOipU3xdw5De1Kfe4nvXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -35,7 +35,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EnoS0dfvB1wcbRYw2esxJEpXRB0=
+			qoBXhztV0F6xD+rHV3AGS3m4rbg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -53,26 +53,108 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2XJz8oEdolmT+e760uANxbaTVpI=
+			LXz/bD9fSZ4nFMFZqapeZNXM0Hw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>IDMPBLocalizations.bundle/de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vqTYRCdm0L8P2TQuS+JgwvYCY5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			diXEkWeaOW656AlLuoBvCfY17kA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BidzTdQOtxzxOTp1P8kd7Fli9sI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ILZCce6q1SrzDUshYi90aHZ+lfg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mEFOm1taGxGpD1JAl3j92dMGmpo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/Qv4rIA8wGjg3plQ7hBuI7JdDn8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft.png</key>
+		<data>
+		FiB+S0+E/cVoiaMkTMtkZuvNEIs=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft@2x.png</key>
+		<data>
+		cGw0deMjMhehhFp96jS6LLPCxBU=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight.png</key>
+		<data>
+		Pv8PKzVEpgqogAJuM/ozYcL62Lc=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight@2x.png</key>
+		<data>
+		fG40Uu2OQpSiftVQ7U5JKc51yi0=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		rlN95mZ8SEzrstdL8qa9nqTsO7M=
+		J7NnuYuGJ98r6Amlxt0F1ZA/YKw=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>WebViewJavascriptBridge.js.txt</key>
+		<data>
+		/m97cRGgXUPzOzp6x9F4LXW7Y94=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		1dmPruG5xrr4ETZndNTXlNHyAGE=
 		</data>
+		<key>nav_back.png</key>
+		<data>
+		DJCxqboppiz2N124Ls2DFOMMw+Y=
+		</data>
+		<key>preview.png</key>
+		<data>
+		kxh6szFkGMxXOYirAXfh8RkFhVo=
+		</data>
 		<key>template.html</key>
 		<data>
-		ak6z3pTAztP6cHwSezSA+oYaUJM=
+		wCMBNgnBxFb5gCVqZu2Kfxvv7c0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +163,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			htadYDaaA9Ba9mNs/po3M8T2B4c=
+			2tNH+mrsJAVPvUdOQWY8QlJeUww=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -99,7 +181,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yJkTURJoV3SOLCWn+d4RAZax2S4=
+			SbtkMWgOipU3xdw5De1Kfe4nvXI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -108,7 +190,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EnoS0dfvB1wcbRYw2esxJEpXRB0=
+			qoBXhztV0F6xD+rHV3AGS3m4rbg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -126,18 +208,100 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2XJz8oEdolmT+e760uANxbaTVpI=
+			LXz/bD9fSZ4nFMFZqapeZNXM0Hw=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>IDMPBLocalizations.bundle/de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vqTYRCdm0L8P2TQuS+JgwvYCY5A=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			diXEkWeaOW656AlLuoBvCfY17kA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/fr.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BidzTdQOtxzxOTp1P8kd7Fli9sI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/pt.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ILZCce6q1SrzDUshYi90aHZ+lfg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mEFOm1taGxGpD1JAl3j92dMGmpo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPBLocalizations.bundle/zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/Qv4rIA8wGjg3plQ7hBuI7JdDn8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft.png</key>
+		<data>
+		FiB+S0+E/cVoiaMkTMtkZuvNEIs=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowLeft@2x.png</key>
+		<data>
+		cGw0deMjMhehhFp96jS6LLPCxBU=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight.png</key>
+		<data>
+		Pv8PKzVEpgqogAJuM/ozYcL62Lc=
+		</data>
+		<key>IDMPhotoBrowser.bundle/images/IDMPhotoBrowser_arrowRight@2x.png</key>
+		<data>
+		fG40Uu2OQpSiftVQ7U5JKc51yi0=
+		</data>
+		<key>WebViewJavascriptBridge.js.txt</key>
+		<data>
+		/m97cRGgXUPzOzp6x9F4LXW7Y94=
+		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		1dmPruG5xrr4ETZndNTXlNHyAGE=
 		</data>
+		<key>nav_back.png</key>
+		<data>
+		DJCxqboppiz2N124Ls2DFOMMw+Y=
+		</data>
+		<key>preview.png</key>
+		<data>
+		kxh6szFkGMxXOYirAXfh8RkFhVo=
+		</data>
 		<key>template.html</key>
 		<data>
-		ak6z3pTAztP6cHwSezSA+oYaUJM=
+		wCMBNgnBxFb5gCVqZu2Kfxvv7c0=
 		</data>
 	</dict>
 	<key>rules</key>

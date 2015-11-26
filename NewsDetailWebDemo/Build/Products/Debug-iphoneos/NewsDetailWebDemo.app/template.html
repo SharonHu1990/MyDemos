@@ -1,31 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
-        <meta charset="utf-8">
-            <title></title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
-                <link href="./detail.css" rel="stylesheet">
-                    
-                    <style>
-                        .tagBtn {
-                            width: 60px;
-                            height: 25px;
-                            border-radius: 8px;
-                            background:none;
-                            color:#858585;
-                            border: 1px solid #ddd;
+        <title></title>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
+            <link href="./detail.css" rel="stylesheet">
+                
+                <style>
+                    .tagBtn {
+                        width: 60px;
+                        height: 25px;
+                        border-radius: 8px;
+                        background:none;
+                        color:#858585;
+                        border: 1px solid #ddd;
+                    }
+                
+                
+                
+                p.line {border-bottom-style:solid; border-width:thin; border-color:#F1F1F1;}
+                
+                    </style>
+                
+                <script>
+                    // 以下是固定写法，你自己的JS文件中必须包含如下代码
+                    function connectWebViewJavascriptBridge(callback) {
+                        if (window.WebViewJavascriptBridge) {
+                            callback(WebViewJavascriptBridge)
+                        } else {
+                            document.addEventListener('WebViewJavascriptBridgeReady',   function() {
+                                                      callback(WebViewJavascriptBridge)
+                                                      }, false)
                         }
+                    }
+                
+                
+                // 注册相关的回调
+                connectWebViewJavascriptBridge(function(bridge) {
+                                               
+                                               /* Init your app here */
+                                               // 从OC  bridge.send 方法过来的 就会调用到这个方法
+                                               bridge.init(function(message, responseCallback) {
+                                                           
+                                                           //判断从Objc传来的消息类型
+                                                           var msgDic = message;
+                                                           var msgType = msgDic["messageType"]
+                                                           
+                                                           /*******  添加标签按钮 ********/
+                                                           if(msgType=="addTagBtn"){
+                                                           
+                                                           var tagName = msgDic["object"]//获取标签名
+                                                           var input = document.getElementById('tagBtn').appendChild(document.createElement("input"))
+                                                           input.className="tagBtn"
+                                                           input.type="submit"
+                                                           input.value=tagName
+                                                           input.style.marginRight = "10px"
+                                                           input.onclick = function(e) {
+                                                           e.preventDefault()
+                                                           var data = message
+                                                           log('JS sending message', data)
+                                                           bridge.send(data, function(responseData) {
+                                                                       
+                                                                       })
+                                                           }
+                                                           }
+                                                           /*******  缩放图片 ********/
+                                                           else if(msgType=="resizeImages"){
+                                                           
+                                                           
+                                                           var myimg,oldwidth
+                                                           var maxwidth=msgDic["maxWidth"] //缩放系数
+                                                           for(var i=0;i <document.images.length;i++){
+                                                           myimg = document.images[i]
+                                                           if(myimg.width > maxwidth){
+                                                           oldwidth = myimg.width
+                                                           myimg.width = maxwidth
+                                                           myimg.height = myimg.height * (maxwidth/oldwidth)
+                                                           }}}
+                                                           
+                                                           /*******  替换图片 ********/
+                                                           else if(msgType=="replaceImages"){
+                                                           var oldSrc = msgDic["oldSrc"];
+                                                           var newSrc = msgDic["newSrc"];
+                                                           
+                                                           bridge.send(message, function(responseData) {
+                                                                       
+                                                                       })
+                                                           
+                                                           for(var i=0;i <document.images.length;i++){
+                                                           myimg = document.images[i]
+                                                           if(oldSrc == myimg.getAttribute("esrc")){
+                                                           myimg.src = newSrc
+                                                           }}
+                                                           
+                                                           }
+                                                           
+                                                           
+                                                           
+                                                           })
+                                               
+                                               // 把URL换成cache的URL
+                                               bridge.registerHandler('imagesDownloadCompleteHandler', function(data, responseCallback) {
+                                                                      imagesDownloadComplete(data[0], data[1], data[2], data[3]);
+                                                                      })
+                                               
+                                               })
+                                               
+                                               function onLoaded() {
+                                                   
+                                                   connectWebViewJavascriptBridge(function(bridge) {
+                                                                                  
+                                                                                  var allImage = document.querySelectorAll("img");
+                                                                                  allImage = Array.prototype.slice.call(allImage, 0);
+                                                                                  var imageUrlsArray = new Array();
+                                                                                  allImage.forEach(function(image) {
+                                                                                                   var src = image.getAttribute("esrc");
+                                                                                                   var newLength = imageUrlsArray.push(src);
+                                                                                                   });
+                                                                                  
+                                                                                  bridge.send({"messageType":"fetchAllImages", "object":imageUrlsArray}, function(responseData) {
+                                                                                              
+                                                                                              })
+                                                                                  });
+                                                                                  
+                                               }
+                
+                
+                // 这一段其实是网上常用的图片延迟加载方法
+                // 就算你不使用图片缓存，只是简单的把图片地址替换回去同样可以加快很多的速度
+                var v = {
+                    eleGroup: null, // 图片数组
+                    limitHeight: 0, // 偏移量
+                    imageUrlsArray: null, // url数组
+                    willCompleteImageArray: null, // 可见高度也就是读取图片高度，如果你内容不会翻到好几页，大可以不需要。
+                    isGetScrollHeight:false
+                }
+                
+                
+                
+                /**
+                 *  将图片的URL 换成 cache 的URL
+                 *
+                 *  @param dic          要修改的字典
+                 *
+                 *  @return NSInter类型的时间戳
+                 */
+                function imagesDownloadComplete(pOldUrl, pNewUrl, maxWidth, maxHeight) {
                     
+                    // 读取未替换的图片
+                    var tempImageUrlsArray = new Array();
+                    if (v.willCompleteImageArray == null) {
+                        v.willCompleteImageArray = document.querySelectorAll("img");
+                        v.willCompleteImageArray = Array.prototype.slice.call(v.willCompleteImageArray, 0);
+                    }
                     
+                    // 查找并替换图像(Base64String)
+                    for (var i = 0, j = v.willCompleteImageArray.length; i < j; i++) {
+                        if (v.willCompleteImageArray[i].getAttribute("esrc") == pOldUrl || v.willCompleteImageArray[i].getAttribute("asrc") == decodeURIComponent(pOldUrl)) {
+                            v.willCompleteImageArray[i].src = pNewUrl;
+
+                            v.willCompleteImageArray[i].width = maxWidth
+                            v.willCompleteImageArray[i].height = maxHeight
+                            
+                        }
+                        else {
+                            tempImageUrlsArray.push(v.willCompleteImageArray[i]);
+                        }
+                    }
                     
-                    p.line {border-bottom-style:solid; border-width:thin; border-color:#F1F1F1;}
+                    v.willCompleteImageArray = tempImageUrlsArray;
+                }
+                
+                
+                /**
+                 *  点击图片
+                 *
+                 *  @param picUrl 图片的url
+                 *
+                 *  @return
+                 */
+                function onImageClick(picUrl){
                     
-                        </style>
-                    </head>  
+                    connectWebViewJavascriptBridge(function(bridge) {
+                                                   var allImage = document.querySelectorAll("p img[esrc]");
+                                                   allImage = Array.prototype.slice.call(allImage, 0);
+                                                   var urls = new Array();
+                                                   var index = -1;
+                                                   var x = 0;
+                                                   var y = 0;
+                                                   var width = 0;
+                                                   var height = 0;
+                                                   allImage.forEach(function(image) {
+                                                                    var imgUrl = image.getAttribute("esrc");
+                                                                    var newLength = urls.push(imgUrl);
+                                                                    if(imgUrl == picUrl || imgUrl == decodeURIComponent(picUrl)){
+                                                                    index = newLength-1;
+                                                                    x = image.getBoundingClientRect().left;
+                                                                    y = image.getBoundingClientRect().top;
+                                                                    x = x + document.documentElement.scrollLeft;
+                                                                    y = y + document.documentElement.scrollTop;
+                                                                    width = image.width;
+                                                                    height = image.height;
+                                                                    console.log("x:"+x +";y:" + y+";width:"+image.width +";height:"+image.height);
+                                                                    }
+                                                                    });
+                                                   
+                                                   console.log("检测到点击");
+                                                   
+                                                   bridge.callHandler('imageDidClicked', {'index':index,'x':x,'y':y,'width':width,'height':height}, function(response) {
+                                                                      console.log("JS已经发出imgurl和index，同时收到回调，说明OC已经收到数据");
+                                                                      });
+                                                   });
+                                                   
+                }
+                
+                    </script>
+                
+                </head>
     
-    <body>  
-        <div id='container' name="container"> 
+    <body onload="onLoaded()">
+        
+        <div id='container' name="container">
             
             <div class="title">
                 
@@ -35,6 +229,7 @@
                     <font size="2" color="#989898">{{ site }}  {{ time }}</font>
                 </div>
                 <br>
+                
                 <div class="tagBtns">
                     
                     {{{ tagBtns }}}
