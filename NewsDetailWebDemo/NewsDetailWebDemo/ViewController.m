@@ -77,7 +77,6 @@
             [self downloadAllImagesInNative:srcArr];
         }
         
-        
         responseCallback(@"Response for message from ObjC");
     }];
     
