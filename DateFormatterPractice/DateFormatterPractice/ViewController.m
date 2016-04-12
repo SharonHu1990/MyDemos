@@ -32,9 +32,15 @@
     NSLog(@"date:%@",date);
     NSLog(@"dateString:%@",dateStr);
     
+    //long long类型的日期转换为NSDate类型
+    long long date2 = 1460435400000;
+    NSDate *startDate = [NSDate dateWithTimeIntervalSince1970:date2 / 1000];
+    NSLog(@"startDate:%@",[dateFormatter stringFromDate:startDate]);
     
-    
-    //Long Long日期转换成NString对象
+    //NSString对象转为NSDate对象
+    NSString *date3 = @"2015-08-06 11:08:35";
+    NSLog(@"date3:%@",[dateFormatter dateFromString:date3]);
+
     
 }
 
