@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LocalizationPractice
+
+  Created by 胡晓阳 on 16/4/11.
+  Copyright © 2016年 胡晓阳. All rights reserved.
+*/
+"Yesterday you sold %@ apps" = "Yesterday you sold %@ apps";
+"You like?" = "You like?";
+"myImageName" = "ilike";

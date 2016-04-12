@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LocalizationPractice
+
+  Created by 胡晓阳 on 16/4/11.
+  Copyright © 2016年 胡晓阳. All rights reserved.
+*/
+"Hello" = "Hello";
+"You like?" = "You like?";
+"Yesterday you sold %@ apps" = "Yesterday you sold %@ apps";
