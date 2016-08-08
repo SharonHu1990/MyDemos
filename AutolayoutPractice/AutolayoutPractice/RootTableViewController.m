@@ -24,7 +24,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    dataSource = @[@"三等分"];
+    dataSource = @[@"实现N等分",
+                   @"动画：使用layoutIfNeeded",
+                   @"Dynamic Table View Cell Height",
+                   @"Demo"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,12 +38,10 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return dataSource.count;
 }
 
@@ -53,6 +54,25 @@
     return cell;
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:@"ShowFirstVC" sender:nil];
+            break;
+        case 1:
+            [self performSegueWithIdentifier:@"ShowSecondVC" sender:nil];
+            break;
+        case 2:
+            [self performSegueWithIdentifier:@"ShowThirdVC" sender:nil];
+            break;
+        case 3:
+            [self performSegueWithIdentifier:@"ShowFourthVC" sender:nil];
+            break;
+        default:
+            break;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.

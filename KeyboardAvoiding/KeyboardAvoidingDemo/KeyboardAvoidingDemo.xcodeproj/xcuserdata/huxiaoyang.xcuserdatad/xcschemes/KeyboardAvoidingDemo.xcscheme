@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A7A437A1CFEFD1E00638BAA"
+               BlueprintIdentifier = "0A7CF4A61D179ADE00EEC3CC"
                BuildableName = "KeyboardAvoidingDemo.app"
                BlueprintName = "KeyboardAvoidingDemo"
                ReferencedContainer = "container:KeyboardAvoidingDemo.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A7A437A1CFEFD1E00638BAA"
+            BlueprintIdentifier = "0A7CF4A61D179ADE00EEC3CC"
             BuildableName = "KeyboardAvoidingDemo.app"
             BlueprintName = "KeyboardAvoidingDemo"
             ReferencedContainer = "container:KeyboardAvoidingDemo.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A7A437A1CFEFD1E00638BAA"
+            BlueprintIdentifier = "0A7CF4A61D179ADE00EEC3CC"
             BuildableName = "KeyboardAvoidingDemo.app"
             BlueprintName = "KeyboardAvoidingDemo"
             ReferencedContainer = "container:KeyboardAvoidingDemo.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A7A437A1CFEFD1E00638BAA"
+            BlueprintIdentifier = "0A7CF4A61D179ADE00EEC3CC"
             BuildableName = "KeyboardAvoidingDemo.app"
             BlueprintName = "KeyboardAvoidingDemo"
             ReferencedContainer = "container:KeyboardAvoidingDemo.xcodeproj">
