@@ -63,6 +63,44 @@ int main(int argc, const char * argv[]) {
         numberFormatter.numberStyle = NSNumberFormatterCurrencyAccountingStyle;//￥1.24
         NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
         
+        
+//        
+//        NSNumberFormatterRoundCeiling = kCFNumberFormatterRoundCeiling,
+//        NSNumberFormatterRoundFloor = kCFNumberFormatterRoundFloor,
+//        NSNumberFormatterRoundDown = kCFNumberFormatterRoundDown,
+//        NSNumberFormatterRoundUp = kCFNumberFormatterRoundUp,
+//        NSNumberFormatterRoundHalfEven = kCFNumberFormatterRoundHalfEven,
+//        NSNumberFormatterRoundHalfDown = kCFNumberFormatterRoundHalfDown,
+//        NSNumberFormatterRoundHalfUp = kCFNumberFormatterRoundHalfUp
+        
+        
+        //四舍五入，保留到整数位
+        numberFormatter.numberStyle = NSNumberFormatterRoundCeiling;//2
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.735567890]]);
+        
+        //四舍五入，保留小数点后三位
+        numberFormatter.numberStyle = NSNumberFormatterRoundFloor;//1.236
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
+        
+        //四舍五入，保留小数点后两位，加上人民币符号
+        numberFormatter.numberStyle = NSNumberFormatterRoundDown;//￥ 1.24
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
+        
+        //先四舍五入，保留小数点后两位，然后转化为百分数
+        numberFormatter.numberStyle = NSNumberFormatterRoundUp;//124%
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
+        
+        //科学计数法
+        numberFormatter.numberStyle = NSNumberFormatterRoundHalfEven;//1.23556789E0（E0表示10的0次幂，E1表示10的1次幂，以此类推）
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
+        
+        //转为文字描述
+        numberFormatter.numberStyle = NSNumberFormatterRoundHalfDown;// 一点二三五五六七八九
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
+        
+        //先四舍五入，保留到整数位，再转化为第几
+        numberFormatter.numberStyle = NSNumberFormatterRoundHalfUp;//第1
+        NSLog(@"%@",[numberFormatter stringFromNumber:[NSNumber numberWithDouble:1.235567890]]);
     }
     return 0;
 }

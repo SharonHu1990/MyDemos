@@ -29,7 +29,12 @@
 }
 
 - (IBAction)click:(id)sender {
-    [UIView animateWithDuration:0.5 delay:0.5 usingSpringWithDamping:0.5 initialSpringVelocity:20 options:UIViewAnimationOptionCurveEaseOut animations:^{
+    
+    [self.myView setFrame:CGRectMake(self.myView.frame.origin.x, CGRectGetHeight(self.view.bounds), self.myView.frame.size.width, CGRectGetHeight(self.myView.frame))];
+    
+    [UIView animateWithDuration:0.5 delay:0.5 usingSpringWithDamping:1 initialSpringVelocity:20 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        
+        [self.myView setFrame:CGRectMake(self.myView.frame.origin.x, self.view.bounds.size.height - CGRectGetHeight(self.myView.bounds), CGRectGetWidth(self.myView.frame), CGRectGetHeight(self.myView.frame))];
         
     } completion:^(BOOL finished) {
         
