@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgQ-NW-l6y">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04f-Ig-u2y">
+                                        <color key="backgroundColor" red="0.62177569300000002" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="6eb-2p-evF"/>
+                                            <constraint firstAttribute="width" constant="73" id="dEC-z7-YSq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="Rqw-Fw-YMX"/>
+                                    <constraint firstItem="04f-Ig-u2y" firstAttribute="centerX" secondItem="SgQ-NW-l6y" secondAttribute="centerX" id="el9-Zf-nxr"/>
+                                    <constraint firstItem="04f-Ig-u2y" firstAttribute="centerY" secondItem="SgQ-NW-l6y" secondAttribute="centerY" id="fhF-7N-Pdi"/>
+                                    <constraint firstAttribute="height" constant="124" id="oyt-9t-NRa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SgQ-NW-l6y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="27I-Nd-30l"/>
+                            <constraint firstItem="SgQ-NW-l6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSS-9U-4uI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueView" destination="04f-Ig-u2y" id="6ja-Dk-hfS"/>
+                        <outlet property="redView" destination="SgQ-NW-l6y" id="Jqd-Uf-Ine"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50" y="-103"/>
+        </scene>
+    </scenes>
+</document>

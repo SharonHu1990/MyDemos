@@ -118,9 +118,7 @@
     
     [self.layer addSublayer:shapeLayer];
     [super drawRect: rect];
-    
-    
-    
+   
 }
 
 
