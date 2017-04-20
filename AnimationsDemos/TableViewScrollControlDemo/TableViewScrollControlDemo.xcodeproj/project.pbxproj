@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A3DEA031EA61B8D005D263E /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DEA021EA61B8D005D263E /* CustomScrollView.m */; };
+		0A5344C81E9F673100871580 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5344C71E9F673100871580 /* main.m */; };
+		0A5344CB1E9F673100871580 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5344CA1E9F673100871580 /* AppDelegate.m */; };
+		0A5344CE1E9F673100871580 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5344CD1E9F673100871580 /* ViewController.m */; };
+		0A5344D11E9F673100871580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5344CF1E9F673100871580 /* Main.storyboard */; };
+		0A5344D31E9F673100871580 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5344D21E9F673100871580 /* Assets.xcassets */; };
+		0A5344D61E9F673100871580 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5344D41E9F673100871580 /* LaunchScreen.storyboard */; };
+		E2A68EF909FDA845D6910195 /* libPods-TableViewScrollControlDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 515E988EA8FCE252A33E1B86 /* libPods-TableViewScrollControlDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		097ECE92E72F0E0BA27F9C88 /* Pods-TableViewScrollControlDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewScrollControlDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewScrollControlDemo/Pods-TableViewScrollControlDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0A3DEA011EA61B8D005D263E /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		0A3DEA021EA61B8D005D263E /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		0A5344C31E9F673100871580 /* TableViewScrollControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewScrollControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5344C71E9F673100871580 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A5344C91E9F673100871580 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A5344CA1E9F673100871580 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A5344CC1E9F673100871580 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A5344CD1E9F673100871580 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A5344D01E9F673100871580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A5344D21E9F673100871580 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A5344D51E9F673100871580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A5344D71E9F673100871580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515E988EA8FCE252A33E1B86 /* libPods-TableViewScrollControlDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TableViewScrollControlDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A3E52F30B8B9BEDAA3E0D5 /* Pods-TableViewScrollControlDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewScrollControlDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TableViewScrollControlDemo/Pods-TableViewScrollControlDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A5344C01E9F673100871580 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A68EF909FDA845D6910195 /* libPods-TableViewScrollControlDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A5344BA1E9F673100871580 = {
+			isa = PBXGroup;
+			children = (
+				0A5344C51E9F673100871580 /* TableViewScrollControlDemo */,
+				0A5344C41E9F673100871580 /* Products */,
+				4F1C3F3528A232A6D6C37EDC /* Pods */,
+				5E31154C630CE3B801AD0D17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A5344C41E9F673100871580 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A5344C31E9F673100871580 /* TableViewScrollControlDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A5344C51E9F673100871580 /* TableViewScrollControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A3DEA011EA61B8D005D263E /* CustomScrollView.h */,
+				0A3DEA021EA61B8D005D263E /* CustomScrollView.m */,
+				0A5344C91E9F673100871580 /* AppDelegate.h */,
+				0A5344CA1E9F673100871580 /* AppDelegate.m */,
+				0A5344CC1E9F673100871580 /* ViewController.h */,
+				0A5344CD1E9F673100871580 /* ViewController.m */,
+				0A5344CF1E9F673100871580 /* Main.storyboard */,
+				0A5344D21E9F673100871580 /* Assets.xcassets */,
+				0A5344D41E9F673100871580 /* LaunchScreen.storyboard */,
+				0A5344D71E9F673100871580 /* Info.plist */,
+				0A5344C61E9F673100871580 /* Supporting Files */,
+			);
+			path = TableViewScrollControlDemo;
+			sourceTree = "<group>";
+		};
+		0A5344C61E9F673100871580 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A5344C71E9F673100871580 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F1C3F3528A232A6D6C37EDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3E52F30B8B9BEDAA3E0D5 /* Pods-TableViewScrollControlDemo.debug.xcconfig */,
+				097ECE92E72F0E0BA27F9C88 /* Pods-TableViewScrollControlDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E31154C630CE3B801AD0D17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				515E988EA8FCE252A33E1B86 /* libPods-TableViewScrollControlDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A5344C21E9F673100871580 /* TableViewScrollControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5344DA1E9F673100871580 /* Build configuration list for PBXNativeTarget "TableViewScrollControlDemo" */;
+			buildPhases = (
+				657B303E3D6E61FB50C4A68E /* [CP] Check Pods Manifest.lock */,
+				0A5344BF1E9F673100871580 /* Sources */,
+				0A5344C01E9F673100871580 /* Frameworks */,
+				0A5344C11E9F673100871580 /* Resources */,
+				FE1AF38BE493BB3A8C29BE61 /* [CP] Embed Pods Frameworks */,
+				05357E489B462B3E686D8FA6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewScrollControlDemo;
+			productName = TableViewScrollControlDemo;
+			productReference = 0A5344C31E9F673100871580 /* TableViewScrollControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5344BB1E9F673100871580 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "胡晓阳";
+				TargetAttributes = {
+					0A5344C21E9F673100871580 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PQGUW24Z79;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A5344BE1E9F673100871580 /* Build configuration list for PBXProject "TableViewScrollControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A5344BA1E9F673100871580;
+			productRefGroup = 0A5344C41E9F673100871580 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A5344C21E9F673100871580 /* TableViewScrollControlDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A5344C11E9F673100871580 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5344D61E9F673100871580 /* LaunchScreen.storyboard in Resources */,
+				0A5344D31E9F673100871580 /* Assets.xcassets in Resources */,
+				0A5344D11E9F673100871580 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05357E489B462B3E686D8FA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewScrollControlDemo/Pods-TableViewScrollControlDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		657B303E3D6E61FB50C4A68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE1AF38BE493BB3A8C29BE61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TableViewScrollControlDemo/Pods-TableViewScrollControlDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A5344BF1E9F673100871580 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5344CE1E9F673100871580 /* ViewController.m in Sources */,
+				0A5344CB1E9F673100871580 /* AppDelegate.m in Sources */,
+				0A3DEA031EA61B8D005D263E /* CustomScrollView.m in Sources */,
+				0A5344C81E9F673100871580 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A5344CF1E9F673100871580 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5344D01E9F673100871580 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A5344D41E9F673100871580 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5344D51E9F673100871580 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A5344D81E9F673100871580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A5344D91E9F673100871580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A5344DB1E9F673100871580 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A3E52F30B8B9BEDAA3E0D5 /* Pods-TableViewScrollControlDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQGUW24Z79;
+				INFOPLIST_FILE = TableViewScrollControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HXY.TableViewScrollControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A5344DC1E9F673100871580 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 097ECE92E72F0E0BA27F9C88 /* Pods-TableViewScrollControlDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQGUW24Z79;
+				INFOPLIST_FILE = TableViewScrollControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HXY.TableViewScrollControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A5344BE1E9F673100871580 /* Build configuration list for PBXProject "TableViewScrollControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5344D81E9F673100871580 /* Debug */,
+				0A5344D91E9F673100871580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5344DA1E9F673100871580 /* Build configuration list for PBXNativeTarget "TableViewScrollControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5344DB1E9F673100871580 /* Debug */,
+				0A5344DC1E9F673100871580 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A5344BB1E9F673100871580 /* Project object */;
+}

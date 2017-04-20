@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A94E11B1E0A1DC4008FD8BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A94E11A1E0A1DC4008FD8BB /* main.m */; };
+		0A94E11E1E0A1DC4008FD8BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A94E11D1E0A1DC4008FD8BB /* AppDelegate.m */; };
+		0A94E1211E0A1DC4008FD8BB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A94E1201E0A1DC4008FD8BB /* ViewController.m */; };
+		0A94E1241E0A1DC4008FD8BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A94E1221E0A1DC4008FD8BB /* Main.storyboard */; };
+		0A94E1261E0A1DC4008FD8BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A94E1251E0A1DC4008FD8BB /* Assets.xcassets */; };
+		0A94E1291E0A1DC4008FD8BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A94E1271E0A1DC4008FD8BB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A94E1161E0A1DC4008FD8BB /* CornerRadiusButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CornerRadiusButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A94E11A1E0A1DC4008FD8BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A94E11C1E0A1DC4008FD8BB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A94E11D1E0A1DC4008FD8BB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A94E11F1E0A1DC4008FD8BB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A94E1201E0A1DC4008FD8BB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A94E1231E0A1DC4008FD8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A94E1251E0A1DC4008FD8BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A94E1281E0A1DC4008FD8BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A94E12A1E0A1DC4008FD8BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A94E1131E0A1DC4008FD8BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A94E10D1E0A1DC4008FD8BB = {
+			isa = PBXGroup;
+			children = (
+				0A94E1181E0A1DC4008FD8BB /* CornerRadiusButtonDemo */,
+				0A94E1171E0A1DC4008FD8BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A94E1171E0A1DC4008FD8BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A94E1161E0A1DC4008FD8BB /* CornerRadiusButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A94E1181E0A1DC4008FD8BB /* CornerRadiusButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A94E11C1E0A1DC4008FD8BB /* AppDelegate.h */,
+				0A94E11D1E0A1DC4008FD8BB /* AppDelegate.m */,
+				0A94E11F1E0A1DC4008FD8BB /* ViewController.h */,
+				0A94E1201E0A1DC4008FD8BB /* ViewController.m */,
+				0A94E1221E0A1DC4008FD8BB /* Main.storyboard */,
+				0A94E1251E0A1DC4008FD8BB /* Assets.xcassets */,
+				0A94E1271E0A1DC4008FD8BB /* LaunchScreen.storyboard */,
+				0A94E12A1E0A1DC4008FD8BB /* Info.plist */,
+				0A94E1191E0A1DC4008FD8BB /* Supporting Files */,
+			);
+			path = CornerRadiusButtonDemo;
+			sourceTree = "<group>";
+		};
+		0A94E1191E0A1DC4008FD8BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A94E11A1E0A1DC4008FD8BB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A94E1151E0A1DC4008FD8BB /* CornerRadiusButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A94E12D1E0A1DC4008FD8BB /* Build configuration list for PBXNativeTarget "CornerRadiusButtonDemo" */;
+			buildPhases = (
+				0A94E1121E0A1DC4008FD8BB /* Sources */,
+				0A94E1131E0A1DC4008FD8BB /* Frameworks */,
+				0A94E1141E0A1DC4008FD8BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CornerRadiusButtonDemo;
+			productName = CornerRadiusButtonDemo;
+			productReference = 0A94E1161E0A1DC4008FD8BB /* CornerRadiusButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A94E10E1E0A1DC4008FD8BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "胡晓阳";
+				TargetAttributes = {
+					0A94E1151E0A1DC4008FD8BB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PQGUW24Z79;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0A94E1111E0A1DC4008FD8BB /* Build configuration list for PBXProject "CornerRadiusButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A94E10D1E0A1DC4008FD8BB;
+			productRefGroup = 0A94E1171E0A1DC4008FD8BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A94E1151E0A1DC4008FD8BB /* CornerRadiusButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A94E1141E0A1DC4008FD8BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94E1291E0A1DC4008FD8BB /* LaunchScreen.storyboard in Resources */,
+				0A94E1261E0A1DC4008FD8BB /* Assets.xcassets in Resources */,
+				0A94E1241E0A1DC4008FD8BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A94E1121E0A1DC4008FD8BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94E1211E0A1DC4008FD8BB /* ViewController.m in Sources */,
+				0A94E11E1E0A1DC4008FD8BB /* AppDelegate.m in Sources */,
+				0A94E11B1E0A1DC4008FD8BB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A94E1221E0A1DC4008FD8BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A94E1231E0A1DC4008FD8BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A94E1271E0A1DC4008FD8BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A94E1281E0A1DC4008FD8BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A94E12B1E0A1DC4008FD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A94E12C1E0A1DC4008FD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A94E12E1E0A1DC4008FD8BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQGUW24Z79;
+				INFOPLIST_FILE = CornerRadiusButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HXY.CornerRadiusButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A94E12F1E0A1DC4008FD8BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PQGUW24Z79;
+				INFOPLIST_FILE = CornerRadiusButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HXY.CornerRadiusButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A94E1111E0A1DC4008FD8BB /* Build configuration list for PBXProject "CornerRadiusButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A94E12B1E0A1DC4008FD8BB /* Debug */,
+				0A94E12C1E0A1DC4008FD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A94E12D1E0A1DC4008FD8BB /* Build configuration list for PBXNativeTarget "CornerRadiusButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A94E12E1E0A1DC4008FD8BB /* Debug */,
+				0A94E12F1E0A1DC4008FD8BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A94E10E1E0A1DC4008FD8BB /* Project object */;
+}

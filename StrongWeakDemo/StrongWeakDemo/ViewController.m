@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     __strong NSObject *obj1 = [[NSObject alloc] init];
-    __strong NSObject *obj2 = obj1;
+    __weak NSObject *obj2 = obj1;
     
     NSLog(@"%@,%@",obj1,obj2);
     

@@ -1,0 +1,10 @@
+require 'cocoapods-multithread-installpod'
+
+ali_source 'alibaba-specs'
+ali_source 'alibaba-specs-mirror'
+
+platform :ios, "8.0"
+
+pod 'PureLayout',                   '~> 2.0.6'
+pod 'KVOController',                '~> 1.0.3'
+pod 'libextobjc',                   '~> 0.5.2' #ReactiveCocoa中使用的Objective-C扩展库

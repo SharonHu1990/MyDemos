@@ -1,0 +1,6 @@
+# source "https://ruby.taobao.org/"
+source 'http://gems.alibaba-inc.com/'
+
+gem 'cocoapods', '0.39.0'
+gem 'cocoapods-multithread-installpod'
+gem 'cocoapods-repo-alirsync'

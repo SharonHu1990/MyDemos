@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 22,
+      "symbol": "TestEnum",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 23,
+      "symbol": ".TestEnum_V1",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 23,
+      "symbol": "TestEnum..TestEnum_V1",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 24,
+      "symbol": ".TestEnum_V2",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 24,
+      "symbol": "TestEnum..TestEnum_V2",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 25,
+      "symbol": ".TestEnum_V3",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo/HeaderDocDemo/TestViewController.h",
+      "line": 25,
+      "symbol": "TestEnum..TestEnum_V3",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/huxiaoyang/MyDemos/Xcode/HeaderDocDemo"
+}

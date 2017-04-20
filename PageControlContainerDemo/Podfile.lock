@@ -1,0 +1,16 @@
+PODS:
+  - KVOController (1.0.3)
+  - libextobjc (0.5.2)
+  - PureLayout (2.0.6)
+
+DEPENDENCIES:
+  - KVOController (~> 1.0.3)
+  - libextobjc (~> 0.5.2)
+  - PureLayout (~> 2.0.6)
+
+SPEC CHECKSUMS:
+  KVOController: c7e8df31a2293bf095810630ab788d358b606667
+  libextobjc: b985a942307f7b5d10394c81d7c984c938d36831
+  PureLayout: 81b3dd204e3db6196dc90702cba3a640fd7670e7
+
+COCOAPODS: 0.39.0
