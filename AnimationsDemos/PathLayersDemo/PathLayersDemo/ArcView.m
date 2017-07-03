@@ -23,6 +23,7 @@
     // Drawing code
     
     //以下方法只能画半圆
+    path.lineWidth = 1.f;
     path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(CGRectGetWidth(self.bounds)/2.f, CGRectGetHeight(self.bounds)/2.f) radius:CGRectGetHeight(self.bounds)/2.f startAngle:GLKMathDegreesToRadians(90.f) endAngle:GLKMathDegreesToRadians(270.f) clockwise:YES];
     [[UIColor orangeColor] setFill];
     [path fill];

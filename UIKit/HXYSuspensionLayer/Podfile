@@ -1,0 +1,9 @@
+require 'cocoapods-multithread-installpod'
+
+ali_source 'alibaba-specs'
+ali_source 'alibaba-specs-mirror'
+
+platform :ios, "8.0"
+target "HXYSuspensionLayer" do
+pod 'PureLayout',                   '~> 2.0.6'
+end

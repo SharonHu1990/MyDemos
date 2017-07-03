@@ -13,6 +13,7 @@
 #import "RoundedRectangleView.h"
 #import "ArcView.h"
 #import "TextLayerView.h"
+#import "CurveView.h"
 
 @interface ViewController ()
 
@@ -32,10 +33,10 @@
     CGFloat width = 240.f;
     CGFloat height = 160.f;
     
-    /*
+   /*
     RectangleView *rectangleView = [[RectangleView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
     [self.view addSubview:rectangleView];
-    */
+*/
     
     
     /*
@@ -48,25 +49,32 @@
     //三角形
     TriangleView *triangleView = [[TriangleView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
     [self.view addSubview:triangleView];
-     */
+    */
     
     
     //椭圆形 & 圆形
-    /*
-    OvalView *ovalView = [[OvalView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
-    [self.view addSubview:ovalView];
-     */
+    
+//    OvalView *ovalView = [[OvalView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
+//    [self.view addSubview:ovalView];
+    
+    
+    
+//    //弧形
+//    ArcView *arcView = [[ArcView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
+//    [self.view addSubview:arcView];
+     
     
     /*
-    //弧形
-    ArcView *arcView = [[ArcView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
-    [self.view addSubview:arcView];
-     */
-    
     //Text Layer
     TextLayerView *textLayerView = [[TextLayerView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
     [self.view addSubview:textLayerView];
-     
+     */
+    
+    
+    //贝塞尔曲线
+    CurveView *curveView = [[CurveView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
+    [self.view addSubview:curveView];
+    
 }
 
 

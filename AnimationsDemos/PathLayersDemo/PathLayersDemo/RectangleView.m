@@ -34,8 +34,8 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundColor:[UIColor grayColor]];
-//        [self sampleShapeLayer];
-        [self complexShape];
+        [self sampleShapeLayer];
+//        [self complexShape];
     }
     return self;
 }

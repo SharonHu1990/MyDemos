@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A1664F71E9CF75200858D99 /* ArcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1664F61E9CF75200858D99 /* ArcView.m */; };
 		0A5344DF1E9F72DE00871580 /* TextLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5344DE1E9F72DE00871580 /* TextLayerView.m */; };
+		0A83C35C1EEFE855009D7B87 /* CurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A83C35B1EEFE855009D7B87 /* CurveView.m */; };
 		0AFB9FB21E94892600461E83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB9FB11E94892600461E83 /* main.m */; };
 		0AFB9FB51E94892600461E83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB9FB41E94892600461E83 /* AppDelegate.m */; };
 		0AFB9FB81E94892600461E83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB9FB71E94892600461E83 /* ViewController.m */; };
@@ -26,6 +27,8 @@
 		0A1664F61E9CF75200858D99 /* ArcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcView.m; sourceTree = "<group>"; };
 		0A5344DD1E9F72DE00871580 /* TextLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextLayerView.h; sourceTree = "<group>"; };
 		0A5344DE1E9F72DE00871580 /* TextLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextLayerView.m; sourceTree = "<group>"; };
+		0A83C35A1EEFE855009D7B87 /* CurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveView.h; sourceTree = "<group>"; };
+		0A83C35B1EEFE855009D7B87 /* CurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurveView.m; sourceTree = "<group>"; };
 		0AFB9FAD1E94892600461E83 /* PathLayersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PathLayersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFB9FB11E94892600461E83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AFB9FB31E94892600461E83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				0A1664F61E9CF75200858D99 /* ArcView.m */,
 				0A5344DD1E9F72DE00871580 /* TextLayerView.h */,
 				0A5344DE1E9F72DE00871580 /* TextLayerView.m */,
+				0A83C35A1EEFE855009D7B87 /* CurveView.h */,
+				0A83C35B1EEFE855009D7B87 /* CurveView.m */,
 			);
 			path = PathLayersDemo;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			files = (
 				0AFB9FD21E94972300461E83 /* OvalView.m in Sources */,
 				0A5344DF1E9F72DE00871580 /* TextLayerView.m in Sources */,
+				0A83C35C1EEFE855009D7B87 /* CurveView.m in Sources */,
 				0AFB9FB81E94892600461E83 /* ViewController.m in Sources */,
 				0AFB9FC91E9489D300461E83 /* RectangleView.m in Sources */,
 				0AFB9FCC1E94943800461E83 /* TriangleView.m in Sources */,
