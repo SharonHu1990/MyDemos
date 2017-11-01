@@ -31,8 +31,8 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self setBackgroundColor:[UIColor grayColor]];
-//        [self maskVsSublayer];
-        [self twoShapes];
+        [self maskVsSublayer];
+//        [self twoShapes];
     }
     return self;
 }

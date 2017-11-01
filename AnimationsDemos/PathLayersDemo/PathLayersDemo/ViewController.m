@@ -45,11 +45,11 @@
      */
     
     
-    /*
+    
     //三角形
     TriangleView *triangleView = [[TriangleView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
     [self.view addSubview:triangleView];
-    */
+    
     
     
     //椭圆形 & 圆形
@@ -71,9 +71,10 @@
      */
     
     
-    //贝塞尔曲线
-    CurveView *curveView = [[CurveView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
-    [self.view addSubview:curveView];
+    
+//    //贝塞尔曲线
+//    CurveView *curveView = [[CurveView alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2.f-width/2.f, CGRectGetHeight(self.view.bounds)/2.f-height/2.f, width, height)];
+//    [self.view addSubview:curveView];
     
 }
 
